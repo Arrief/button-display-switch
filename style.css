@@ -1,3 +1,27 @@
+button {
+    border-radius: 100px;
+    border: solid silver 2px;
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+}
+
+.fruit-containe, .veggie-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 .hidden {
     display: none;
+}
+
+#orange {
+    background-image: url("images/tangerine.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#pine-picture {
+    border: solid orange 2px;
+    border-radius: 100px;
 }

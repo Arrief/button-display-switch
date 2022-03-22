@@ -51,3 +51,8 @@ textContainer.innerHTML = `Your favorite fruit and veggie: ${finalArray}`;
 // PROBLEM: above line displays nothing at all.
 // textContainer.innerHTML = finalArray[0] displays undefined... 
 // "return finalArray" in both eventListener functions does not solve the issue.
+
+let pineTest = document.getElementById("pine-picture");
+pineTest.addEventListener("click", function() {
+    alert("Hey, it works!");
+})
