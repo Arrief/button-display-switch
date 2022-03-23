@@ -10,6 +10,12 @@ function whatIsThis(something) {
     return `This is a ${something}`;
 }
 
+// Function to t est if adding an eventListener to <img> works -> it does!
+let pineTest = document.getElementById("pine-picture");
+pineTest.addEventListener("click", function() {
+    alert("Hey, it works!");
+})
+
 // Function to add CSS class "hidden" to an HTML-element and remove the same class if it is already there from the start, so hidden stuff is now displayed 
 function switchDisplay(toHide, toDisplay) {
     toHide.classList.toggle("hidden");
@@ -43,16 +49,8 @@ veggieButtons.forEach(function (element) {
         finalArray.push(element.innerHTML);
 
         console.log(`finalArray is now: ${finalArray} with ${finalArray.length} elements`);
+        textContainer.innerHTML = `<h1>Your favorite fruit and veggie: ${finalArray}<h1>`;
     })
 })
 
 console.log(finalArray);
-textContainer.innerHTML = `Your favorite fruit and veggie: ${finalArray}`;
-// PROBLEM: above line displays nothing at all.
-// textContainer.innerHTML = finalArray[0] displays undefined... 
-// "return finalArray" in both eventListener functions does not solve the issue.
-
-let pineTest = document.getElementById("pine-picture");
-pineTest.addEventListener("click", function() {
-    alert("Hey, it works!");
-})
